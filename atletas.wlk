@@ -5,9 +5,18 @@ object victoria {
     var edad = 23
     var altura = 170
     var deporteActual = tenis
+    var elementoActual = raqueta
 
     method cumplirAnios() {
         edad = edad + 1
+    }
+
+    method edad() {
+        return edad
+    }
+
+    method altura() {
+      return altura
     }
 
     method cambiarAltura(nuevaAltura) {
@@ -18,13 +27,14 @@ object victoria {
         deporteActual = nuevaDisciplina
     }
 
-    method presupuesto() {
-        return self.presupuestoPropio(deporte) + deporteActual.presupuestoDisciplina()
+    method cambiarElemento(nuevoElemento) {
+        elementoActual = nuevoElemento
     }
 
-    method presupuestoPropio() {
-        
-    }
+
+    method presupuesto() {
+        return deporteActual.presupuestoDisciplina() + deporteActual.entrenadores() + elementoActual.costoElemento(self)
+   }
 }
 
 object comiteOlimpico {

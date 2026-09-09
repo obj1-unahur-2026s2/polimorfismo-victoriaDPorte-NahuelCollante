@@ -1,3 +1,4 @@
+import elementos.*
 import atletas.*
 
 object tenis {
@@ -11,7 +12,7 @@ object tenis {
     method cambiarCantidadDeInvitados(cantidadNuevosInvitados) {
         invitados = cantidadNuevosInvitados
     }
-    method valorDeEntrenadores() {
+    method entrenadores() {
         return cantidadDeEntrenadores * comiteOlimpico.valorPorEntrenador()
     }
 
@@ -28,10 +29,18 @@ object judo {
     var cantidadDeMedallas = 1
     var cantidadDeEntrenadores = 2
 
+    method cambiarEntrenadores(cantidadNuevosEntrenadores) {
+        cantidadDeEntrenadores = cantidadNuevosEntrenadores
+    }
+
+    method entrenadores() {
+        return cantidadDeEntrenadores * comiteOlimpico.valorPorEntrenador()
+    }
+
     method sumarUnaMedallaDeJudoGanada() {
         cantidadDeMedallas = cantidadDeMedallas + 1
     }
-    
+
     method presupuestoDisiplina() {
       
     }
