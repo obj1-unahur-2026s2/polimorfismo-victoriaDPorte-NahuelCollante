@@ -41,12 +41,24 @@ object judo {
         cantidadDeMedallas = cantidadDeMedallas + 1
     }
 
-    method presupuestoDisiplina() {
-      
+    method presupuestoDisciplina() {
+        return cantidadDeMedallas * 120
     }
 
 }
 
 object hockey {
+    var cantidadDeEntrenadores = 3
 
+    method cambiarEntrenadores(cantidadNuevosEntrenadores) {
+        cantidadDeEntrenadores = cantidadNuevosEntrenadores
+    }
+
+    method entrenadores() {
+        return cantidadDeEntrenadores * comiteOlimpico.valorPorEntrenador()
+    }
+
+    method presupuestoDisciplina() {
+        return 300 
+    }
 }

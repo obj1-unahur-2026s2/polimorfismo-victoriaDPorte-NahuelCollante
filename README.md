@@ -44,6 +44,9 @@ Se pide:
 2. Polimorfismo: Indicar dónde, qué objetos intervienen y por qué se utiliza. 
 3. Probar los casos planteados.
 4. Agregar un nuevo deporte, el hockey y definir todo lo que sea necesario para que funcione.
+
+Hockey: tiene un presupuesto base de $300 más el costo de los sticks que use Victoria. Cada stick tiene un precio individual de $10. Inicialmente se sabe que Victoria necesita 15 sticks, pero la cantidad puede cambiar. El hockey requiere 3 entrenadores inicialmente, pero esta cantidad puede modificarse.
+
 5. ¿Que pasaria si victoria agarra la raqueta para practicar judo? Probar otras posibles combinaciones
 
 

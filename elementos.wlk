@@ -2,19 +2,20 @@ import atletas.*
 
 object raqueta {
 
-    method costoDelElemento(deportista) {
-        return 15 * deportista.edad() 
-    }
-
-    method costoElemento(deportista) {
-        return self.costoDelElemento(deportista).min(400)
+    method costoElemento() {
+        return (15 * victoria.edad()).min(400)
     }
 }
 
 object judogi {
-
+    
+    method costoElemento() {
+        return (1.5 *  victoria.altura()).max(200)
+    }
 }
 
 object stick {
-
+    method costoElemento() {
+        return 10
+    }
 }

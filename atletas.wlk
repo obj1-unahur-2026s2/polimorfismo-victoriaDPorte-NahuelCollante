@@ -16,14 +16,14 @@ object victoria {
     }
 
     method altura() {
-      return altura
+        return altura
     }
 
     method cambiarAltura(nuevaAltura) {
         altura = nuevaAltura
     }
 
-    method cambiarDisiplina(nuevaDisciplina) {
+    method cambiarDisciplina(nuevaDisciplina) {
         deporteActual = nuevaDisciplina
     }
 
@@ -33,8 +33,8 @@ object victoria {
 
 
     method presupuesto() {
-        return deporteActual.presupuestoDisciplina() + deporteActual.entrenadores() + elementoActual.costoElemento(self)
-   }
+        return deporteActual.presupuestoDisciplina() + deporteActual.entrenadores() + elementoActual.costoElemento()
+    }
 }
 
 object comiteOlimpico {

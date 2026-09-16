@@ -2,3 +2,23 @@ import atletas.*
 import elementos.*
 import disciplinas.*
 
+test "Victoria se quiere parecer a Pareto se hace pequeña (150cm), practica judo por lo tanto usa judogi"{
+    victoria.cambiarAltura(150)
+    victoria.cambiarDisciplina(judo)
+    victoria.cambiarElemento(judogi)
+    assert.equals(365, atletas.victoria.presupuesto())
+}
+
+test "Victoria ahora se quiere parecer a delpo y crece hasta 210 cambia a tenis donde necesita una raqueta y 2 entrenadores"{
+    victoria.cambiarAltura(210)
+    victoria.cambiarDisciplina(tenis)
+    victoria.cambiarElemento(raqueta)
+    tenis.cambiarEntrenadores(2)
+    assert.equals(580, victoria.presupuesto())
+}
+
+test "Victoria ahora se quiere parecer a lucha aymar y comienza a practicar hockey"{
+    victoria.cambiarDisciplina(hockey)
+    victoria.cambiarElemento(stick)
+    assert.equals(340, victoria.presupuesto())
+}
